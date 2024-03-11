@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdanan;
+    /* border: solid red 1px; */
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+}
+.container{
+
+}
+        /* navbar logo start  */
+.custom-logo{
+    /* border: red solid 1px; */
+    
+}
+.custom-logo a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 10px;
+} 
+h1{
+    color: black;
+    font-size: 30px;
+    font-weight: bold ;
+}    
+h1 span{
+    color: green;
+}   
+h1 .L{
+    color: black;
+}
+.custom-nav .col{
+    border-bottom: 2px solid saddlebrown;
+    box-shadow: rgba(148, 238, 45, 0.562) 5px 2px 8px 5px;
+    
+}
+
+ .custom-input{
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 10px;
+        left: 80px;
+
+
+}
+
+input{
+    width: 450px;
+    border-radius: 20px;
+    color: #c0b5b5;
+    padding-left: 15px ;
+    }
+.search{
+    position: relative;
+    right: 30px;
+    /* transform: translateX(-50%); */
+    font-size: 18px;
+}
+
+.icon{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    top: 20px;
+    left: 100px;
+    }
+.icon .fa-house{
+    margin-left: 80px;
+    color: green;
+    font-size: 25px;
+}    
+.icon .fa-phone{
+    margin-left: 80px;
+    color: green;
+    font-size: 25px;
+}
+.icon .fa-envelope{
+    margin-left: 80px;
+    color: green;
+    font-size: 25px;
+}
+
+
+.fa-house:hover{
+    color: rgba(250, 1, 1, 0.733);
+    cursor: pointer;
+}
+
+.fa-phone:hover{
+    color: rgba(250, 1, 1, 0.733);
+    cursor: pointer;
+}
+.fa-envelope:hover{
+    color: rgba(250, 1, 1, 0.733);
+    cursor: pointer;
+}
+
+/* Contact form css start  */
+.sub-con{
+    background-color: #b8abab;
+}
+.name{
+
+}
+

@@ -1,0 +1,109 @@
+.custom-nav form {
+    margin-left: 150px !important;
+    padding: 10px;
+    width: 400px;
+}
+
+.navbar-collapse{
+    flex-basis: none;
+}
+
+.custom-nav{
+    background-color: green;
+    
+}
+
+
+
+.custom-slider img{
+    width: 100%;
+    height: 500px;
+}
+
+.custom-card .row{
+    /* justify-content: space-evenly !important; */
+}
+.card-img{
+    
+}
+.card-img img{
+    width: 300px;
+    height: 250px;
+}
+.content{
+     background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    top: 97%;
+    /* left: 0; */
+    width: 300px;
+    height: 250px;
+    box-sizing: border-box;
+    
+}
+/* <ion-icon name="home-outline"></ion-icon>
+              <ion-icon name="call-outline"></ion-icon>
+              <ion-icon name="mail-outline"></ion-icon> */
+
+/*               
+              
+              <style>
+              body {
+                  margin: 0;
+                  padding: 0;
+              }
+      
+              .toggle {
+                  background-color: brown;
+                  color: white;
+                  font-weight: bold;
+      
+              }
+      
+              .list {
+                  background-color: rgb(77, 184, 83);
+                  width: 200px;
+                  height: 470px;
+              }
+      
+              .list a {
+                  text-decoration: none;
+                  color: white;
+                  font-weight: bold;
+      
+              }
+      
+              .list li {
+                  list-style: none;
+              }
+      
+              #menu-list.active {
+                  animation: slide-in 0.3s ease-in;
+              }
+      
+              #menu-list:not(.active) {
+                  animation: slide-out 0.3s ease-in-out forwards;
+              }
+      
+      
+              @keyframes slide-in {
+                  0% {
+                      transform: translateX(-150%);
+                  }
+      
+                  100% {
+                      transform: translateX(0);
+                  }
+              }
+      
+      
+              @keyframes slide-out {
+                  0% {
+                      transform: translateX(0);
+                  }
+      
+                  100% {
+                      transform: translateX(-160%);
+                  }
+              }
+          </style> */

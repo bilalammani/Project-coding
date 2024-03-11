@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdanan;
+    /* border: solid red 1px; */
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+}
+.container{
+
+}
+        /* navbar logo start  */
+.custom-logo{
+    /* border: red solid 1px; */
+    
+}
+.custom-logo a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 10px;
+} 
+h1{
+    color: black;
+    font-size: 30px;
+    font-weight: bold ;
+}    
+h1 span{
+    color: green;
+}   
+h1 .L{
+    color: black;
+}
+.custom-nav .col{
+    border-bottom: 2px solid saddlebrown;
+    box-shadow: rgba(148, 238, 45, 0.562) 5px 2px 8px 5px;
+    
+}
+
+ .custom-input{
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 10px;
+        left: 80px;
+
+
+}
+
+input{
+    width: 450px;
+    border-radius: 20px;
+    color: #c0b5b5;
+    padding-left: 15px ;
+    }
+.search{
+    position: relative;
+    right: 30px;
+    /* transform: translateX(-50%); */
+    font-size: 18px;
+}
+
+.icon{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    top: 20px;
+    left: 100px;
+    }
+.icon .fa-house{
+    margin-left: 80px;
+    color: green;
+    font-size: 25px;
+}    
+.icon .fa-phone{
+    margin-left: 80px;
+    color: green;
+    font-size: 25px;
+}
+.icon .fa-envelope{
+    margin-left: 80px;
+    color: green;
+    font-size: 25px;
+}
+
+
+.fa-house:hover{
+    color: rgba(250, 1, 1, 0.733);
+    cursor: pointer;
+}
+
+.fa-phone:hover{
+    color: rgba(250, 1, 1, 0.733);
+    cursor: pointer;
+}
+.fa-envelope:hover{
+    color: rgba(250, 1, 1, 0.733);
+    cursor: pointer;
+}
+
+.grid-container{
+    /* border: 2px solid green;  */
+}
+.custom-grid{
+    margin-top: 15px;
+}
+.custom-grid .col{
+    height: 35px;
+    background-color: green;
+    display: flex;
+    /* justify-content: center; */
+}
+
+
+.menu{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    z-index: 4;
+    /* border: solid 1px black; */
+    
+    
+}
+.menu-li{
+    width: auto;
+    height: 30px;
+    /* border: 1px solid saddlebrown; */
+    list-style: none;
+    margin: auto;
+    z-index: 4;
+    
+
+}
+
+.menu-a{
+    width: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    display: block;
+    text-align: center;
+    z-index: 4;
+    /* margin-left: 193px; */
+}
+.menu-a:hover{
+    color: green;
+    background-color: yellow ;
+    width: 80%;
+    z-index: 4;
+
+}
+.fas:active{
+}
+.menu-li:hover .sub-li{
+    display: block;
+    /* z-index: 1; */
+    /* transition: display 5s 5s ; */
+
+}
+.sub{
+    display: block;
+    /* z-index: 1; */
+    
+}
+.sub-li{
+    width: 150px;
+    list-style: none;
+    display: none;
+    border: 1px solid black;
+    background-color: rgb(0, 59, 0);
+    /* z-index: 1; */
+}
+.sub-a{
+    width: 300px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    /* z-index: 1; */
+    
+}
+.sub-li:hover{
+    background-color: white;
+}
+.sub-a:hover{
+    color: green;
+}
+.menu-li:hover ul{
+    display: block;
+    /* z-index: 1; */
+}
+.carousel{
+    width: auto;
+    height: auto;
+    margin: 5px;
+    z-index: 3;
+    
+}
+.carousel-item{
+    /* position: relative; */
+    z-index: 3;
+}
+.carousel-item img{
+    width: 1110px;
+    height: 500px;
+
+}
+.col-md-12{
+
+}
+.card{
+    width: 100%;
+    height: 240px;
+    display: inline-block;
+}
+.cus-card-img{
+    width: 300px;
+    height: 220px;
+    margin-top: 7px;
+}
+
+.footer{
+    width: 100%;
+    height: 400px;
+    margin-top: 5px;
+    background-color: #3db439;
+    border-radius: 10px 10px 0 0;
+    display: inline-block;
+    align-content: center;
+    
+}
+.heading{
+    align-content: center;
+
+}
+.heading h1{
+    color: rgb(1, 1, 66);
+    font-size: 60px;
+    font-weight: bolder;
+}
+.content p{
+    color: white;
+    margin-top: -30px;
+}
+
+.link{
+    display: block;
+    /* justify-content: center; */
+}
+.link h1{
+    text-align: center;
+    color: rgb(1, 1, 66);
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.links{
+    display: flex;
+    position: absolute;
+    left: 320px;
+
+}
+
+.fa-brands{
+    font-size: 45px;
+    margin-left: 80px;
+}
+.fa-brands:hover{
+    font-size: 40px;
+    cursor: pointer;
+    
+
+}
+
+

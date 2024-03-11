@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .toggle {
+            background-color: brown;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        .list {
+            background-color: rgb(77, 184, 83);
+            width: 200px;
+            height: 470px;
+        }
+
+        .list a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        .list li {
+            list-style: none;
+        }
+
+        #menu-list.active {
+            animation: slide-in 0.3s ease-in;
+        }
+
+        #menu-list:not(.active) {
+            animation: slide-out 0.3s ease-in-out forwards;
+        }
+
+
+        @keyframes slide-in {
+            0% {
+                transform: translateX(-150%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+
+        @keyframes slide-out {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-160%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container custom-nav">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <form class="d-flex " role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item ">
+                        <a class="nav-link active me-5" aria-current="page" href="#">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-5" href="#">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link me-5" href="#">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link me-5" href="#">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link me-5" href="#">
+                            <i class="fa-solid fa-truck"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+    <!-- side bar start -->
+    <div class="container custom-slider">
+        <div class="row">
+            <div class="col-3">
+                <div>
+                    <button id="menu-toggle" class="toggle">&#9776; Menu</button>
+                    <div class="list" id="menu-list">
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                            <li>Help</li>
+                            <li>Services</li>
+                            <li>Team</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- side bar end -->
+
+            <!-- slider start  -->
+            <div class="col-8">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/slider4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slider8.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slider7.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- slider end -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- card start -->
+    <div class="container custom-card mt-3">
+        <div class="row">
+            <div class="card-img col-3 col-md-4  ">
+                <img src="images/slider1.jpg" alt="">
+              <div class="content col-6 col-md-4">
+                    <h1>Flower Rose</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui dolorum minima incidunt temporibus
+                        cupiditate aliquid quam voluptatem, consequuntur modi ipsum, impedit error? Deserunt doloremque
+                        magnam quibusdam id exercitationem suscipit facilis maxime. Est autem laudantium molestias illo
+                        voluptas quis minima natus.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="col-6 col-md-4">
+
+                <div class="card-img">
+                    <img src="images/slider2.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="card-content">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mt-2 mt-md-0">
+
+                <div class="card-img">
+                    <img src="images/slider3.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="card-content">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-6 col-md-4 ">
+                <div class="card-img">
+                    <img src="images/slider1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="card-content">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+
+                <div class="card-img">
+                    <img src="images/slider2.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="card-content">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mt-2 mt-md-0">
+
+                <div class="card-img">
+                    <img src="images/slider3.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="card-content">
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- <div class="row mt-3">
+            <div class="col-6 col-md-4">
+                <div class="card-img">
+                    <img src="images/slider1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="card-content">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+
+                <div class="card-img">
+                    <img src="images/slider2.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="card-content">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mt-2 mt-md-0">
+
+                <div class="card-img">
+                    <img src="images/slider3.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="card-content">
+                </div>
+            </div>
+        </div>
+    </div> -->
+        <!-- footer start -->
+        <!-- <div class="container custom-footer">
+            <div class="row d-block">
+                <div class="col-4">
+                    <h1>   Contact links   </h1>
+                </div>
+                <div class="col-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus voluptas maxime
+                        consectetur cumque, culpa sed autem recusandae id omnis dolorum iusto eaque tenetur ex
+                        cum officiis vero dolor, aperiam amet.</p>
+                </div>
+            </div>
+        </div> -->
+        <!-- footer End -->
+        <script src="js/bootstrap.bundle.js"> </script>
+        <script>
+            const menuToggle = document.querySelector('#menu-toggle');
+            const menuList = document.querySelector('#menu-list');
+            menuToggle.addEventListener('click', () => {
+                menuList.classList.toggle('active');
+            })
+
+        </script>
+</body>
+
+</html>
